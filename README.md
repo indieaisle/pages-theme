@@ -24,10 +24,7 @@ Using Blocks Edit:
 5. Click on placeholder content on the right to change it.
 
 #### How do I publish my pages?
-You'll first need to export your pages out of Blocks Edit: In the visual editor, after saving your updates, click **Export** at the top.
+You'll need to export your pages out of Blocks Edit: In the visual editor, after saving your updates, click **Export** at the top. You can [setup a direct export](https://blocksedit.com/help/integrations/ftp-sftp-setup/) to your web host.
 
-If you added images to your pages, you'll have to host them somewhere. You can use the Blocks Edit [FTP integration](https://blocksedit.com/help/integrations/ftp-sftp-setup/) to upload to your site.
-
-Otherwise, you'll [have the option](https://blocksedit.com/help/editor/export-landing-page/) to download your images which you will then need to upload manually to your host, and update the image paths in your pages' HTML code.
-
-To publish your page, you'll need to import your saved HTML to your hosting provider where your public content goes.
+#### Can you code HTML/CSS?
+You can use this theme as reference and code your own [custom editable theme for Blocks Edit](https://blocksedit.com/getting-started/).
