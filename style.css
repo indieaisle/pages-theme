@@ -226,6 +226,10 @@ hr {
   font-style: italic;
 }
 
+.fill {
+  width: 100%;
+}
+
 /* Forms */
 
 form input, form textarea, form select {
@@ -250,13 +254,23 @@ form input.highlight, form textarea.highlight, form select.highlight {
 
 /* Profile header */
 
+.banner {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .profile {
+  position: relative;
+  padding-top: 15vw;
   width: 100%;
   text-align: center;
 
   & p {
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 75%;
 
     @media (max-width: 600px) {
@@ -264,9 +278,7 @@ form input.highlight, form textarea.highlight, form select.highlight {
     }
   }
   & h3 {
-    display: inline-block;
-    position: relative;
-    top: -4px;
+    margin-bottom: 0;
     font-size: 24px;
 
     & a {
@@ -281,15 +293,12 @@ form input.highlight, form textarea.highlight, form select.highlight {
 }
 
 .avatar {
-  display: inline-block;
-  position: relative;
-  top: -6px;
-  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 100%;
-  width: 48px;
-  height: 48px;
+  width: 90px;
+  height: 90px;
   background-color: #ccc;
-  vertical-align: middle;
   overflow: hidden;
 
   &.publication {
