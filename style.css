@@ -1,20 +1,8 @@
 /* Global */
 
 :root {
-/* Colors */
   --primary: #333;
-
-/* Text */
   --helvetica: 'Helvetica', Arial, sans-serif;
-  --10px: 0.625rem;
-  --15px: 0.938rem;
-  --18px: 1.125rem;
-  --20px: 1.25rem;
-  --22px: 1.375rem;
-  --24px: 1.5rem;
-  --28px: 1.75rem;
-  --30px: 1.875rem;
-  --50px: 3.125rem;
 }
 
 *, * :before, * :after {
@@ -34,7 +22,7 @@ body {
   background-color: #eee;
   font-family: var(--helvetica);
   text-align: center;
-  font-size: var(--18px);
+  font-size: 18px;
   line-height: 1.4;
   color: #333;
   font-weight: 300;
@@ -43,10 +31,10 @@ body {
   cursor: default;
 
   @media (min-width: 1100px) {
-    font-size: var(--20px);
+    font-size: 20px;
   }
   @media (min-width: 1200px) {
-    font-size: var(--22px);
+    font-size: 22px;
   }
 }
 
@@ -77,38 +65,38 @@ h1, h2, h3 {
 }
 
 h1 {
-  margin-bottom: var(--20px);
-  font-size: var(--50px);
+  margin-bottom: 20px;
+  font-size: 50px;
   color: var(--primary);
 
   @media (max-width: 600px) {
-    margin-bottom: var(--30px);
-    font-size: var(--30px);
+    margin-bottom: 30px;
+    font-size: 30px;
   }
 }
 h2 {
-  margin-bottom: var(--10px);
-  font-size: var(--28px);
+  margin-bottom: 10px;
+  font-size: 28px;
 
   @media (max-width: 600px) {
-    margin-bottom: var(--20px);
-    font-size: var(--24px);
+    margin-bottom: 20px;
+    font-size: 24px;
   }
 }
 h3 {
-  margin-bottom: var(--10px);
-  font-size: var(--24px);
+  margin-bottom: 10px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
 
   @media (max-width: 600px) {
-    margin-bottom: var(--10px);
-    font-size: var(--20px);
+    margin-bottom: 10px;
+    font-size: 20px;
   }
 }
 
 p {
-  margin-bottom: var(--18px);
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -121,7 +109,7 @@ ul, ol {
 }
 ul {
   list-style: disc;
-  margin-left: var(--30px);
+  margin-left: 30px;
 
   & li {
     margin-bottom: 10px;
@@ -136,7 +124,7 @@ strong {
 }
 
 hr {
-  margin: var(--30px) 0;
+  margin: 30px 0;
   border: 0;
   height: 1px;
   background-color: rgba(51, 51, 51, 0.2);
@@ -210,7 +198,7 @@ hr {
   text-align: center;
   cursor: pointer;
   overflow: hidden;
-  font-size: var(--18px);
+  font-size: 18px;
   line-height: 1;
   font-weight: 400;
   vertical-align: middle;
@@ -234,7 +222,7 @@ hr {
 
 .caption {
   text-align: center;
-  font-size: var(--15px);
+  font-size: 15px;
   font-style: italic;
 }
 
@@ -247,7 +235,7 @@ form input, form textarea, form select {
   box-sizing: border-box;
   padding: 7px 9px;
   font-family: var(--helvetica);
-  font-size: var(--18px);
+  font-size: 18px;
   color: #666;
   font-weight: 100;
 }
@@ -279,7 +267,7 @@ form input.highlight, form textarea.highlight, form select.highlight {
     display: inline-block;
     position: relative;
     top: -4px;
-    font-size: var(--24px);
+    font-size: 24px;
 
     & a {
       text-decoration: none;
@@ -314,7 +302,7 @@ form input.highlight, form textarea.highlight, form select.highlight {
 footer {
   padding-bottom: 30px;
   p {
-    font-size: var(--15px);
+    font-size: 15px;
     text-align: center;
   }
 }
@@ -384,11 +372,11 @@ footer {
 
     & h3 {
       margin-bottom: 0;
-      font-size: var(--20px);
+      font-size: 20px;
     }
     & p {
       margin-bottom: 0;
-      font-size: var(--18px);
+      font-size: 18px;
 
       @media (max-width: 480px) {
         margin-bottom: 10px;
@@ -417,7 +405,7 @@ article {
   width: 100%;
   background-color: #fff;
   padding: 60px 80px;
-  font-size: var(--20px);
+  font-size: 20px;
   text-align: left;
   line-height: 1.4;
   overflow: hidden;
