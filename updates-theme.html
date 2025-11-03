@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="color-scheme" content="light dark">
-		<title>Indie Aisle Pages theme</title>
-		<meta name="apple-mobile-web-app-title" content="Pages theme">
-		<meta name="description" content="">
+		<title>Name/Title</title>
+		<meta property="og:site_name" content="Name/Title">
+		<meta name="apple-mobile-web-app-title" content="Name/Title">
+		<meta name="description" content="A sentence or two about yourself/brand.">
+		<link rel="canonical" href="">
+		<meta property="og:image" content="">
 		<meta name="author" content="Indie Aisle">
-		<link rel="stylesheet" href="https://indieaisle.com/pages-theme/style.css">
+		<link rel="me" href="https://indieaisle.com/@username">
+		<link rel="icon" href="icon.svg" type="image/svg+xml">
 		<link rel="icon" href="favicon.ico">
 		<link rel="apple-touch-icon" href="appicon.png">
-<!-- Open Graph -->
-		<meta property="og:site_name" content="Indie Aisle Pages theme">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="">
-		<meta property="og:title" content="Indie Aisle Pages theme">
-		<meta property="og:description" content="">
-		<meta property="og:image" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<meta name="color-scheme" content="dark light">
 	</head>
 <body>
 
@@ -41,115 +39,114 @@
 	</section>
 
 <!-- Components -->
-	<h1 class="block-component block-edit" data-group="title" data-block="title-text" data-title="Title">Title</h1>
+	<h1 class="block-component block-edit" data-group="title" data-block="title-text" data-title="Title">Article title</h1>
 
 	<h2 class="block-component block-edit" data-group="subtitle" data-block="subtitle-text" data-title="Subtitle">Subtitle</h2>
 
 	<p class="date block-component block-edit" data-group="date" data-block="date-text" data-title="Date">8/16/2025</p>
 
-	<p class="description block-component block-edit" data-group="text" data-title="Text" data-block="text-text">Page copy goes here. The length could depend on the type of page. Like a short update, or a list of items.</p>
+	<p class="description block-component block-edit" data-group="text" data-title="Text" data-block="text-text">Article with longer text goes here, where the text would go on to at least several paragraphs and could include an image.</p>
 
 	<ul class="block-component" data-group="list" data-title="List">
 		<li class="block-edit" data-block="list-item">List item</li>
 	</ul>
+
+	<blockquote class="block-component" data-group="quote" data-title="Quote">
+		<p class="block-remove block-edit" data-block="quote-quote">Quote text that you want to stand out.</p>
+		<cite class="block-edit" data-block="quote-cite">Author citation</cite>
+	</blockquote>
 
 	<a href="#" class="btn-main block-component block-edit" data-group="button" data-block="button-text" data-title="Button">Button</a>
 
 	<a href="#" class="block-component block-edit" data-group="link" data-block="link-text" data-title="Link">Link</a>
 
 	<figure class="block-component" data-group="large-image" data-title="Large image">
-		<img src="https://fpoimg.com/1600x800?text=Content%20Image" width="800" class="block-edit" data-block="large-image-image" style="display: block; width: 100%; height: auto;">
+		<img src="https://fpoimg.com/1600x800?text=Article%20Image" width="800" class="block-edit" data-block="large-image-image" style="display: block; width: 100%; height: auto;">
 		<figcaption>
 			<p class="caption block-edit" data-block="large-image-caption">Optional caption for image.</p>
 		</figcaption>
 	</figure>
 
 	<figure class="block-component" data-group="image-center" data-title="Centered image">
-		<img src="https://fpoimg.com/1200x600?text=Content%20Image" width="600" class="block-edit" data-block="image-center-image" style="display: block; margin: 0 auto; width: 75%; height: auto;">
+		<img src="https://fpoimg.com/1200x600?text=Article%20Image" width="600" class="block-edit" data-block="image-center-image" style="display: block; margin: 0 auto; width: 75%; height: auto;">
 		<figcaption>
 			<p class="caption block-edit" data-block="image-center-caption">Optional caption for image.</p>
 		</figcaption>
 	</figure>
 	<figure class="block-component" data-group="image-center">
-		<img src="https://fpoimg.com/800x400?text=Content%20Image" width="400" class="block-edit" data-block="image-center-image" style="display: block; margin: 0 auto; width: 50%; height: auto;">
+		<img src="https://fpoimg.com/800x400?text=Article%20Image" width="400" class="block-edit" data-block="image-center-image" style="display: block; margin: 0 auto; width: 50%; height: auto;">
 		<figcaption>
 			<p class="caption block-edit" data-block="image-center-caption">Optional caption for image.</p>
 		</figcaption>
 	</figure>
 
-<!-- Listing section -->
-	<section class="listing box block-section" data-group="listing" data-title="Listing">
-		<div class="row" style="gap: 20px; grid-row-gap: 0;">
-			<div class="col-3">
-				<img src="https://fpoimg.com/400x300?text=Content%20Image" width="400" class="fill block-edit" data-block="listing-image" style="height: auto;">
-			</div>
-			<div class="col-9">
-				<h3>Blog post title</h3>
-				<p class="block-edit" data-block="listing-text" style="margin-bottom: 0;">Listing item, like a featured link with a description.</p>
-				<p><a href="#">Read full article</a></p>
-				<p class="date">8/16/2025</p>
-			</div>
+<!-- Article summary post type section -->
+	<section class="listing box block-section" data-group="post-type-article" data-title="Article summary post type">
+		<h2>Article title</h2>
+		<p class="block-edit" data-block="post-type-article-text">Short summary of article, about a sentence or two.<br><a href="#">Read full article</a></p>
+		<p class="date block-edit" data-block="post-type-article-date">8/16/2025</p>
+	</section>
+
+<!-- Text post type section -->
+	<section class="listing box block-section" data-group="post-type-text" data-title="Text post type">
+		<p class="block-edit" data-block="post-type-text-text">Text update, with an optional <a href="#">link</a> or two as part of the text.</p>
+			<p class="date block-edit" data-block="post-type-text-date">8/16/2025</p>
 		</div>
 	</section>
 
-<!-- Three-column section -->
-	<section class="three-column block-section" data-group="three-column" data-title="Three-column">
-		<div class="row" style="gap: 20px;">
-			<div class="col-4 box">
-				<img src="https://fpoimg.com/500x250?text=Content%20Image" width="500" class="fill block-edit block-remove" data-block="three-column-image-1" style="display: block; width: 100%; height: auto;">
-				<p class="block-edit" data-block="three-column-text-1">Page copy goes here. The length could depend on the type of page. Like a short update, or a list of items.</p>
-			</div>
-			<div class="col-4 box">
-				<img src="https://fpoimg.com/500x250?text=Content%20Image" width="500" class="fill block-edit block-remove" data-block="three-column-image-1" style="display: block; width: 100%; height: auto;">
-				<p class="block-edit" data-block="three-column-text-2">Page copy goes here. The length could depend on the type of page. Like a short update, or a list of items.</p>
-			</div>
-			<div class="col-4 box">
-				<img src="https://fpoimg.com/500x250?text=Content%20Image" width="500" class="fill block-edit block-remove" data-block="three-column-image-1" style="display: block; width: 100%; height: auto;">
-				<p class="block-edit" data-block="three-column-text-3">Page copy goes here. The length could depend on the type of page. Like a short update, or a list of items.</p>
-			</div>
-		</div>
+<!-- Image post type section -->
+	<section class="listing box block-section" data-group="post-type-image" data-title="Image post type">
+		<p><img src="https://fpoimg.com/1600x800?text=Update%20Image" width="800" class="block-edit" data-block="post-type-image-image" style="display: block; width: 100%; height: auto;"></p>
+		<p class="block-edit" data-block="post-type-image-text">Optional description.</p>
+		<p class="date block-edit" data-block="post-type-image-date">8/16/2025</p>
 	</section>
 
-<!-- Page share section -->
-	<section class="block-section" data-group="share" data-title="Share">
-		<p style="text-align: center;"><span class="block-edit" data-block="share-text">Share this page:</span> <a onclick="copyShareLink();" id="share-link">Copy Link</a> <a href="javascript:window.open('mailto:?subject='+document.title+'&body='+encodeURIComponent(document.querySelector('meta[name=description]').content)+'%20'+encodeURIComponent(window.location.href));">Send Email</a></p>
-		<style>
-		#share-link:hover {
-			cursor: pointer;
-		}
-		</style>
-		<script>
-		async function copyShareLink() {
-			let text = window.location.href;
-
-			await navigator.clipboard.writeText(text);
-			document.querySelector('#share-link').innerText = "Copied";
-
-			setTimeout(() => {
-				document.querySelector('#share-link').innerText = "Copy Link";
-			}, 1000);
-		}
-		</script>
-	</section>
-
-<!-- Newsletter sign up -->
-	<section class="block-section" data-group="newsletter" data-title="Newsletter sign up" style="margin-bottom: 20px; text-align: center;">
-		<form id="newsletter" action="" method="post">
-			<p><span class="block-edit" data-block="newsletter-text">Sign up for updates via email</span>:<br>
-				<input id="newsletter-email" size="30" maxlength="200" name="" required type="email" placeholder="Email address"> <button type="submit" class="btn-main">Subscribe</button>
-			</p>
-		</form>
+<!-- Quote post type section -->
+	<section class="listing box block-section" data-group="post-type-quote" data-title="Quote post type">
+		<blockquote>
+			<p class="block-remove block-edit" data-block="post-type-quote-quote">Quote text that you want to stand out.</p>
+			<cite class="block-edit" data-block="post-type-quote-cite">Author citation</cite>
+		</blockquote>
+		<p class="date block-edit" data-block="post-type-quote-date">8/16/2025</p>
 	</section>
 
 <!-- Article section -->
 	<article class="block-section" data-group="article" data-title="Article">
-		<p class="block-remove block-edit" data-block="article-text">Longer copy goes here, like an article, where the text would go on to at least a few sentences and probably some number of paragraphs.</p>
+		<p class="block-remove block-edit" data-block="article-text">Article with longer text goes here, where the text would go on to at least several paragraphs and could include an image.</p>
 	</article>
+
+<!-- Link listing section -->
+	<section class="link-listing box block-section" data-group="link-listing" data-title="Related article listing">
+		<div class="text">
+			<h2 class="p-name block-edit" data-block="link-listing-title">Related article title</h2>
+			<p class="p-note block-edit block-remove" data-block="link-listing-description">Short description.</p>
+		</div>
+		<a href="#" class="btn-main u-url block-edit" data-block="link-listing-button">Read article</a>
+	</section>
 
 </main>
 
-<footer class="container block-region block-remove">
-	<p class="block-edit" data-block="footer-text">An <a href="https://indieaisle.com" target="_blank">Indie Aisle</a> template. Built and edited with <a href="https://blocksedit.com" target="_blank">Blocks Edit</a>.</p>
+<footer class="container block-region block-remove" data-group="footer">
+	<p style="text-align: center;"><span class="block-edit" data-block="share-text">Share this page:</span> <a onclick="copyShareLink();" id="share-link">Copy Link</a> <a href="javascript:window.open('mailto:?subject='+document.title+'&body='+encodeURIComponent(document.querySelector('meta[name=description]').content)+'%20'+encodeURIComponent(window.location.href));">Send Email</a></p>
+	<style>
+	#share-link:hover {
+		cursor: pointer;
+	}
+	</style>
+	<script>
+	async function copyShareLink() {
+		let text = window.location.href;
+
+		await navigator.clipboard.writeText(text);
+		document.querySelector('#share-link').innerText = "Copied";
+
+		setTimeout(() => {
+			document.querySelector('#share-link').innerText = "Copy Link";
+		}, 1000);
+	}
+	</script>
+
+	<p class="block-edit block-remove" data-block="footer-text">An <a href="https://indieaisle.com" target="_blank">Indie Aisle</a> template. Built and edited with <a href="https://blocksedit.com" target="_blank">Blocks Edit</a>.</p>
 </footer>
 
 <!-- Indie Aisle - connect directly to your audience -->
