@@ -2,84 +2,40 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Name/Title</title>
-		<meta property="og:site_name" content="Name/Title">
-		<meta name="apple-mobile-web-app-title" content="Name/Title">
-		<meta name="description" content="A sentence or two about yourself/brand.">
-		<link rel="canonical" href="">
-		<meta property="og:image" content="">
+		<title>Your Name</title>
+		<meta name="apple-mobile-web-app-title" content="Your Name">
+		<meta property="og:site_name" content="Your Name">
+		<meta name="description" content="A sentence or two about yourself.">
 		<meta name="author" content="Indie Aisle">
 		<link rel="me" href="https://indieaisle.com/@username">
-		<link rel="icon" href="icon.svg" type="image/svg+xml">
+		<link rel="canonical" href="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="favicon.ico">
+		<link rel="icon" href="icon.svg" type="image/svg+xml">
 		<link rel="apple-touch-icon" href="appicon.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://indieaisle.com/pages-theme/style.css">
-		<meta name="color-scheme" content="dark light">
+		<meta property="og:image" content="metaimage.png">
+		<meta name="color-scheme" content="light dark">
+		<link rel="stylesheet" href="style.css">
 	</head>
 <body>
 
 <!-- Header -->
-<img src="https://fpoimg.com/1200x300?text=Banner" class="banner block-edit block-remove" data-block="header-banner">
-<header class="container profile hcard block-region block-remove" data-group="header">
-	<a href="#"><img src="https://fpoimg.com/180x180?text=Avatar" class="avatar block-region block-edit" data-group="header-avatar-type" data-block="header-avatar"></a>
-	<a href="#"><img src="https://fpoimg.com/180x180?text=Avatar" class="avatar publication block-region block-edit" data-group="header-avatar-type" data-block="header-avatar"></a>
-	<h3 class="p-name u-url block-edit" data-block="header-name"><a href="#">Name/Title</a></h3>
-	<p class="block-edit block-remove" data-block="header-text">A sentence or two about yourself/brand.</p>
-	<p><a href="#" class="btn-main block-edit" data-block="header-button">Follow updates</a></p>
+<header class="container profile hcard">
+	<a href="#"><img src="avatar-photo.jpg" class="avatar block-edit" data-block="header-avatar"></a>
+	<h1 class="p-name u-url block-edit" data-block="header-name">Your Name</h1>
+	<p class="block-edit block-remove" data-block="header-text">A sentence or two about yourself.</p>
+
+<!-- Menu section -->
+	<ul class="menu">
+		<li class="block-region block-repeat" data-group="header-menu"><a href="#" class="btn-main block-edit" data-block="header-menu-item">Link</a></li>
+	</ul>
 </header>
 
 <main class="container">
 
-<!-- Menu section -->
-	<section class="menu block-section" data-group="menu" data-title="Menu" style="text-align: center;">
-		<ul class="block-region" data-group="menu-items">
-			<li class="block-edit block-repeat" data-block="menu-item">Menu Item</li>
-		</ul>
-	</section>
-
-<!-- Components -->
-	<h2 class="block-component block-edit" data-group="subtitle" data-block="subtitle-text" data-title="Subtitle">Subtitle</h2>
-
-	<a href="#" class="btn-main block-component block-edit" data-group="button" data-block="button-text" data-title="Button">Button</a>
-
-	<a href="#" class="block-component block-edit" data-group="link" data-block="link-text" data-title="Link">Link</a>
-
-<!-- Callout section -->
-	<section class="callout box block-section" data-group="callout" data-title="Callout" style="text-align: center;">
-		<h2 class="block-remove block-edit" data-block="callout-text">Intro callout text that you want to stand out.</h2>
-	</section>
-
-<!-- Two-column section -->
-	<section class="block-section" data-group="two-column" data-title="Two-column">
-		<div class="row" style="gap: 20px;">
-			<div class="col-6 box">
-				<img src="https://fpoimg.com/800x400?text=Content%20Image" width="800" class="fill block-edit block-remove" data-block="two-column-image-1" style="display: block; width: 100%; height: auto;">
-				<p class="block-edit" data-block="two-column-text-1">Description text for an item you want to feature goes here.</p>
-			</div>
-			<div class="col-6 box">
-				<img src="https://fpoimg.com/800x400?text=Content%20Image" width="800" class="fill block-edit block-remove" data-block="two-column-image-2" style="display: block; width: 100%; height: auto;">
-				<p class="block-edit" data-block="two-column-text-2">Description text for an item you want to feature goes here.</p>
-			</div>
-		</div>
-	</section>
-
-<!-- Three-column section -->
-	<section class="block-section" data-group="three-column" data-title="Three-column">
-		<div class="row" style="gap: 20px;">
-			<div class="col-4 box">
-				<img src="https://fpoimg.com/500x250?text=Content%20Image" width="500" class="fill block-edit block-remove" data-block="three-column-image-1" style="display: block; width: 100%; height: auto;">
-				<p class="block-edit" data-block="three-column-text-1">Description text for an item you want to feature goes here.</p>
-			</div>
-			<div class="col-4 box">
-				<img src="https://fpoimg.com/500x250?text=Content%20Image" width="500" class="fill block-edit block-remove" data-block="three-column-image-1" style="display: block; width: 100%; height: auto;">
-				<p class="block-edit" data-block="three-column-text-2">Description text for an item you want to feature goes here.</p>
-			</div>
-			<div class="col-4 box">
-				<img src="https://fpoimg.com/500x250?text=Content%20Image" width="500" class="fill block-edit block-remove" data-block="three-column-image-1" style="display: block; width: 100%; height: auto;">
-				<p class="block-edit" data-block="three-column-text-3">Description text for an item you want to feature goes here.</p>
-			</div>
-		</div>
+<!-- Button section -->
+	<section class="button-listing block-section" data-group="button-listing" data-title="Button listing">
+		<a href="#" class="btn-main fill u-url block-edit" data-block="button-listing-button">Link title</a>
 	</section>
 
 <!-- Link listing section -->
@@ -91,32 +47,69 @@
 		<a href="#" class="btn-main u-url block-edit" data-block="link-listing-button">Visit</a>
 	</section>
 
+<!-- Single-column section -->
+	<section class="box block-section" data-group="single-column" data-title="Single-column">
+		<h2 class="p-name block-edit" data-block="single-column-title">Link title</h2>
+		<p class="p-note block-edit block-remove" data-block="single-column-description">Short description.</p>
+
+<!-- Components -->
+		<h2 class="block-component block-edit" data-group="title" data-block="title-text" data-title="Title">Title</h2>
+
+		<h3 class="block-component block-edit" data-group="subtitle" data-block="subtitle-text" data-title="Subtitle">Subtitle</h3>
+
+		<p class="description block-component block-edit" data-group="text" data-title="Text" data-block="text-text">Article with longer text goes here, where the text would go on to at least several paragraphs and could include an image.</p>
+
+		<a href="#" class="btn-main block-component block-edit" data-group="button" data-block="button-text" data-title="Button">Button</a>
+	</section>
+
+<!-- Two-column section -->
+	<section class="block-section" data-group="two-column" data-title="Two-column">
+		<div class="row" style="gap: 20px; row-gap: 0;">
+			<div class="col-6 box">
+				<h3 class="p-name block-edit" data-block="link-listing-title-1">Link title</h3>
+				<p class="block-edit" data-block="two-column-text-1">Description text for an item you want to feature goes here.</p>
+			</div>
+			<div class="col-6 box">
+				<h3 class="p-name block-edit" data-block="link-listing-title-2">Link title</h3>
+				<p class="block-edit" data-block="two-column-text-2">Description text for an item you want to feature goes here.</p>
+			</div>
+		</div>
+	</section>
+
+<!-- Single-column image section -->
+	<section class="box box-image block-section" data-group="single-column-image" data-title="Single column image">
+		<img src="image-example.jpg" width="800" class="fill block-edit block-remove" data-block="single-column-image">
+	</section>
+
+<!-- Two-column image section -->
+	<section class="block-section" data-group="two-column-image" data-title="Two-column image">
+		<div class="row" style="gap: 20px; row-gap: 0;">
+			<div class="col-6 box box-image">
+				<img src="image-example.jpg" width="800" class="fill block-edit block-remove" data-block="two-column-image-1">
+			</div>
+			<div class="col-6 box box-image">
+				<img src="image-example.jpg" width="800" class="fill block-edit block-remove" data-block="two-column-image-2">
+			</div>
+		</div>
+	</section>
+
 </main>
 
-<footer class="container block-region block-remove" data-group="footer">
-	<p style="text-align: center;"><span class="block-edit" data-block="share-text">Share this page:</span> <a onclick="copyShareLink();" id="share-link">Copy Link</a> <a href="javascript:window.open('mailto:?subject='+document.title+'&body='+encodeURIComponent(document.querySelector('meta[name=description]').content)+'%20'+encodeURIComponent(window.location.href));">Send Email</a></p>
-	<style>
-	#share-link:hover {
-		cursor: pointer;
-	}
-	</style>
-	<script>
-	async function copyShareLink() {
-		let text = window.location.href;
+<!-- Follow footer -->
+<footer>
+	<h3 class="block-edit" data-block="follow-updates-title">Follow</h3>
+	<p class="p-note block-edit block-remove" data-block="follow-updates-description">Get updates via email, or <a href="#">the RSS feed</a></p>
 
-		await navigator.clipboard.writeText(text);
-		document.querySelector('#share-link').innerText = "Copied";
-
-		setTimeout(() => {
-			document.querySelector('#share-link').innerText = "Copy Link";
-		}, 1000);
-	}
-	</script>
-
-	<p class="block-edit block-remove" data-block="footer-text">An <a href="https://indieaisle.com" target="_blank">Indie Aisle</a> template. Built and edited with <a href="https://blocksedit.com" target="_blank">Blocks Edit</a>.</p>
+	<form id="contact" method="post" action="https://indieaisle.com/email/in/">
+		<input type="hidden" id="enablesubmit" name="enablesubmit" value="">
+		<p>
+			<input id="field-email" size="30" maxlength="200" name="field-email" required placeholder="Email address" class="block-edit" data-block="follow-updates-email" type="email"> <button type="submit" class="btn-main">Subscribe</button>
+		</p>
+	</form>
 </footer>
 
 <!-- Indie Aisle - connect directly to your audience -->
+<script src="https://indieaisle.com/form/submit.js" defer></script>
 <script src="https://indieaisle.com/stats/get.js"></script>
 <!-- / Indie Aisle -->
 

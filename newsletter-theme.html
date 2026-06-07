@@ -1,297 +1,314 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-  <meta name="color-scheme" content="light dark">
-  <title>Indie Aisle newsletter</title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="color-scheme" content="light dark">
+		<title>Your Name</title>
 <style>
 /* Dark mode settings */
 :root {
-  color-scheme: light dark;
+	color-scheme: light dark;
 }
 
 /* Reset */
 html, body {
-  margin: 0 auto !important;
-  padding: 0 !important;
-  height: 100% !important;
-  width: 100% !important;
+	margin: 0 auto !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
 }
 .main {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Content */
 
 body {
-  background: #eeeeee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 300;
-  color: #333333;
+	background: #eeeeee;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+	color: #333333;
 }
 
 .preview {
-  display: none;
+	display: none;
 }
 
 .wrapper {
-  background: #eeeeee;
+	background: #eeeeee;
 }
 .main {
-  margin: 0 auto;
-  max-width: 600px;
+	margin: 0 auto;
+	max-width: 600px;
 }
 .content {
-  margin: 0;
-  text-align: center;
+	margin: 0;
+	text-align: center;
 }
 
 .column {
-  margin: 0 auto;
-  width: 100%;
+	margin: 0 auto;
+	width: 100%;
 }
 
 h1, h2, h3 {
-  margin: 0;
-  margin-bottom: 10px;
-  color: #333333;
-  font-weight: 500;
+	margin: 0;
+	margin-bottom: 15px;
+	color: #175bd2;
+	font-weight: 400;
 }
 h1 {
-  font-size: 20px;
-  line-height: 20px;
+	font-size: 24px;
+	line-height: 28px;
 }
 h2 {
-  font-size: 26px;
-  line-height: 26px;
+	font-size: 22px;
+	line-height: 24px;
 }
 
 a {
-  text-decoration: none;
-  color: #3082e4;
-  font-weight: 500;
+	color: #175bd2;
+	font-weight: 500;
+}
+a:hover {
+	color: #3082e4;
 }
 
 p {
-  margin: 0;
-  margin-bottom: 10px;
+	margin: 0;
+	margin-bottom: 15px;
+}
+p:last-child {
+	margin-bottom: 0;
 }
 
 ul {
-  margin: 0;
-  padding-left: 30px;
-  list-style: square;
+	margin: 0;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	list-style: square;
 }
 
 img {
-  display: block;
+	display: block;
 }
 img.fill {
-  width: 100%;
+	display: block;
+	margin: 0;
+	border-radius: 10px;
+	width: 100%;
+	height: auto;
 }
 
 .btn {
-  margin: 0;
-  display: inline-block;
-  border-radius: 50px;
-  border: 1px solid #175bd2;
-  border-bottom: 2px solid #175bd2;
-  padding: 12px 20px;
-  background: #3082e4;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1;
-  text-decoration: none;
-  text-align: center;
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	border-radius: 50px;
+	border: 1px solid #175bd2;
+	border-bottom: 2px solid #175bd2;
+	background-color: #2579dd;
+	padding: 10px 16px;
+	color: #ffffff;
+	white-space: nowrap;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1;
+	font-weight: 400;
+}
+.btn:hover {
+	background: #3082e4;
+	color: #ffffff;
+}
+
+blockquote {
+	margin: 0;
+	margin-bottom: 15px;
+}
+blockquote p {
+	margin-bottom: 0;
+	font-size: 24px;
+}
+@media (min-width: 600px) {
+	blockquote p {
+		font-size: 28px;
+	}
+}
+blockquote p:before {
+	content: '“';
+}
+blockquote p:after {
+	content: '”';
+}
+blockquote cite:before {
+	content: '— ';
 }
 
 .section .highlight {
-  margin: 0 auto;
-  border-radius: 10px;
-  background-color: #ffffff;
-  padding: 20px;
-  overflow: hidden;
-}
-
-.spacer-sm, .spacer-md {
-  width: 100%;
-}
-.spacer-sm {
-  height: 30px;
-}
-.spacer-md {
-  height: 40px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	padding: 20px;
+	overflow: hidden;
 }
 
 .header {
-  text-align: center;
+	padding: 20px 0;
+	text-align: center;
 }
 .header .avatar {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  border-radius: 100%;
-}
-.header h1 {
-  text-decoration: none;
-  color: #333333;
-}
-.header h1 a {
-  color: #333333;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	border-radius: 100%;
 }
 
 .footer {
-  max-width: 100%;
-  margin: 0 auto;
-  margin-top: 30px;
-  background-color: #e9e9e9;
-  padding: 20px;
-  text-align: center;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: center;
 }
 .footer p {
-  font-size: 14px;
-  line-height: 20px;
+	font-size: 14px;
+	line-height: 20px;
 }
 .footer a {
-  color: #333333;
+	color: #333333;
 }
 
 /* Responsive adjustments */
 
 @media screen and (max-width: 480px) {
-  .column {
-    display: block !important;
-    box-sizing: border-box;
-    padding: 0 14px 14px 14px !important;
-  }
-  .column:last-child {
-    padding-bottom: 0 !important;
-  }
-  .column.alt {
-    padding-top: 14px !important;
-    padding-bottom: 0 !important;
-  }
-  .column.alt:last-child {
-    padding-bottom: 14px !important;
-  }
-  .icons .column {
-    width: 50% !important;
-    float: left;
-  }
-  .icons .column:nth-child(3) {
-    padding-bottom: 0 !important;
-  }
-  .icons .column.alt:nth-child(3) {
-    padding-bottom: 14px !important;
-  }
+	.column {
+		display: block !important;
+		box-sizing: border-box;
+		padding: 0 14px 14px 14px !important;
+	}
+	.column:last-child {
+		padding-bottom: 0 !important;
+	}
+	.column.alt {
+		padding-top: 14px !important;
+		padding-bottom: 0 !important;
+	}
+	.column.alt:last-child {
+		padding-bottom: 14px !important;
+	}
+	.icons .column {
+		width: 50% !important;
+		float: left;
+	}
+	.icons .column:nth-child(3) {
+		padding-bottom: 0 !important;
+	}
+	.icons .column.alt:nth-child(3) {
+		padding-bottom: 14px !important;
+	}
 }
 
 /* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
-  body, .wrapper {
-    background-color: #222 !important;
-  }
-  h1, h2, h3, p, ul li, code {
-    color: #f1f1f1 !important;
-  }
-  .column.alt {
-    background-color: #1b1b1b !important;
-  }
-  .btn a {
-    background: #a6a6a6 !important;
-    color: #404040 !important;
-  }
+	body, .wrapper {
+		background-color: #222 !important;
+	}
+	h1, h2, h3, p, ul li, code {
+		color: #f1f1f1 !important;
+	}
+	.column.alt {
+		background-color: #1b1b1b !important;
+	}
+	.btn a {
+		background: #a6a6a6 !important;
+		color: #404040 !important;
+	}
 }
 </style>
-</head>
+	</head>
 <body>
-  <div class="preview block-preview">&nbsp;</div>
-  <div role="article" lang="en" dir="ltr" class="wrapper">
+	<div class="preview block-preview">&nbsp;</div>
+	<div role="article" lang="en" dir="ltr" class="wrapper">
 
 <!-- Container -->
-
 <!--[if mso]>
-      <p style="text-align: center;">Email may not look quite right in Outlook for Windows. <a href="#" style="text-decoration: underline; color: #1467ac;">View it in your browser.</a></p>
+			<p style="text-align: center;">Email may not look quite right in Outlook for Windows. <a href="#" style="text-decoration: underline; color: #1467ac;">View it in your browser.</a></p>
 <![endif]-->
-    <div class="main">
+		<div class="main">
 
 <!-- Header -->
+			<div class="content">
 
-      <div class="content">
-
-        <div class="spacer-md">&nbsp;</div>
-        <div class="header column block-region block-remove">
-          <img src="https://via.placeholder.com/180x180?text=Photo" width="90" height="90" class="avatar block-edit">
-          <h1 class="block-edit block-remove"><a href="https://indieaisle.com/#">Your Name</a></h1>
-        </div>
-        <div class="spacer-sm">&nbsp;</div>
+				<div class="header column">
+					<img src="avatar-photo.jpg" width="90" height="90" class="avatar block-edit" data-block="header-avatar">
+					<h1 class="block-edit" data-block="header-name">Your Name</h1>
+				</div>
 
 <!-- Content -->
+				<div class="section column alt" style="text-align: left;">
 
-        <div class="column block-section" data-group="content-standard" style="text-align: left;">
-          <p class="block-edit block-remove" data-block="content-standard-text">Text copy goes here. Sometimes it includes email provider tokens to pull in audience info, like %%first_name%%.</p>
-          <div class="column block-component" data-group="content-images">
-            <img src="https://via.placeholder.com/1200x600?text=Content+Image" width="600" height="auto" class="fill block-edit" style="height: auto;">
-          </div>
-          <div class="column block-component" data-group="content-images">
-            <img src="https://via.placeholder.com/900x450?text=Content+Image" width="450" height="auto" class="fill block-edit" style="margin: 0 auto; width: 75%; height: auto;">
-          </div>
-          <div class="column block-component" data-group="content-images">
-            <img src="https://via.placeholder.com/595x300?text=Content+Image" width="297" height="auto" class="fill block-edit" style="display: inline-block; width: 49.5%; height: auto;"> <img src="https://via.placeholder.com/595x300?text=Content+Image" width="297" height="auto" class="fill block-edit" style="display: inline-block; width: 49.5%; height: auto;">
-          </div>
-          <div class="spacer-sm block-component">&nbsp;</div>
-          <div class="block-component">
-            <h2 class="block-edit">Subeadline/secondary title text</h2>
-          </div>
-          <div class="block-component">
-            <p class="block-edit">More text copy goes here. It could be as long as you need it to be as there is plenty of room to let it flow!</p>
-          </div>
-          <div class="block-component">
-            <ul>
-              <li class="block-edit">List item</li>
-            </ul>
-          </div>
-          <div class="block-component">
-            <p><a href="https://indieaisle.com/#" class="block-edit">Call to action &rarr;</a></p>
-          </div>
-          <div class="block-component">
-            <a href="https://indieaisle.com/#" class="btn block-edit" target="_blank">Call to action</a>
-          </div>
+<!-- Article summary post type section -->
+					<div class="highlight block-section" data-group="article-summary" data-title="Article summary post type">
+						<h2 class="block-edit" data-block="article-summary-title">Article title</h2>
+						<p class="block-edit" data-block="article-summary-text">Short summary of article, about a sentence or two.</p>
+						<p><a href="#" class="btn block-edit" data-block="article-summary-btn" target="_blank">Read article</a></p>
+						<p class="date block-edit" data-block="article-summary-date">8/16/2026</p>
 
-        </div>
-        <div class="column block-section" data-group="content-standard" style="text-align: center;">
-          <p class="block-edit block-remove" data-block="content-standard-text">More text copy goes here. It could be as long as you need it to be as there is plenty of room to let it flow!</p>
-        </div>
-        <div class="section column alt block-section" data-group="content-standard" style="text-align: left;">
-          <div class="highlight">
-            <p class="block-edit block-remove" data-block="content-standard-text">More text copy goes here. It could be as long as you need it to be as there is plenty of room to let it flow!</p>
-          </div>
-        </div>
-        <div class="section column alt block-section" data-group="content-standard" style="text-align: center;">
-          <div class="highlight">
-            <p class="block-edit block-remove" data-block="content-standard-text">More text copy goes here. It could be as long as you need it to be as there is plenty of room to let it flow!</p>
-          </div>
-        </div>
+<!-- Components
+						<h2 class="block-component block-edit">Title</h2>
 
-        <div class="block-section" class="spacer-sm">&nbsp;</div>
+						<p class="block-component block-edit">More text copy goes here. It could be as long as you need it to be as there is plenty of room to let it flow!</p>
 
-      </div>
+						<ul class="block-component">
+							<li class="block-edit">List item</li>
+						</ul>
 
-    </div>
+						<a href="#" class="btn block-component block-edit" target="_blank">Read article</a>
+
+						<img src="image-example.jpg" width="600" height="auto" class="fill block-component block-edit" style="height: auto;">
+
+						<img src="image-example.jpg" width="450" height="auto" class="fill block-component block-edit" style="margin: 0 auto; width: 50%; height: auto;">
+-->
+
+					</div>
+
+<!-- Text post type section -->
+					<div class="highlight block-section" data-group="text-post" data-title="Text post type">
+						<p class="block-edit block-remove" data-block="text-post-text">Text update, with an optional <a href="#">link</a> or two as part of the text.</p>
+						<p class="block-edit block-remove" data-block="text-post-date">8/16/2026</p>
+					</div>
+
+<!-- Image post type section -->
+					<div class="highlight block-section" data-group="image-post" data-title="Image post type">
+						<p><img src="image-example.jpg" width="600" height="auto" class="fill block-edit" data-block="image-post-image" style="height: auto;"></p>
+						<p class="block-edit block-remove" data-block="image-post-text">Optional description.</p>
+						<p class="block-edit block-remove" data-block="image-post-date">8/16/2026</p>
+					</div>
+
+<!-- Quote post type section -->
+					<div class="highlight block-section" data-group="quote-post" data-title="Quote post type">
+						<blockquote>
+							<p class="block-remove block-edit" data-block="quote-post-quote">Quote text that you want to stand out.</p>
+							<cite class="block-edit" data-block="quote-post-cite">Author citation</cite>
+						</blockquote>
+						<p class="block-edit block-remove" data-block="quote-post-date">8/16/2026</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
 
 <!-- Footer -->
-    <div class="main footer">
-      <p class="block-edit">
-        An <a href="https://indieaisle.com" target="_blank">Indie Aisle</a> template. Built and edited with <a href="https://blocksedit.com" target="_blank">Blocks Edit</a>.<br>
-        Mailing address goes here<br>
-        <br>
-        Reason for sending out this email <a href="https://indieaisle.com/#" target="_blank">Unsubscribe</a>
-      </p>
-    </div>
-  </div>
+		<div class="main footer">
+			<p class="block-edit" data-block="footer-note">Reason for sending out this email <a href="#" target="_blank">Unsubscribe</a><br>Mailing address goes here</p>
+		</div>
+	</div>
 </body>
 </html>

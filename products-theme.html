@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Your Name</title>
+		<meta name="apple-mobile-web-app-title" content="Your Name">
+		<meta property="og:site_name" content="Your Name">
+		<meta name="description" content="A sentence or two about yourself.">
+		<meta name="author" content="Indie Aisle">
+		<link rel="me" href="https://indieaisle.com/@username">
+		<link rel="canonical" href="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.ico">
+		<link rel="icon" href="icon.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="appicon.png">
+		<meta property="og:image" content="metaimage.png">
+		<meta name="color-scheme" content="light dark">
+		<link rel="stylesheet" href="style.css">
+	</head>
+<body>
+
+<!-- Header -->
+<header class="container profile hcard">
+	<a href="#"><img src="avatar-photo.jpg" class="avatar block-edit" data-block="header-avatar"></a>
+	<h1 class="p-name u-url block-edit" data-block="header-name">Your Name</h1>
+	<p class="block-edit block-remove" data-block="header-text">A sentence or two about yourself.</p>
+
+<!-- Menu section -->
+	<ul class="menu">
+		<li class="block-region block-repeat" data-group="header-menu"><a href="#" class="btn-main block-edit" data-block="header-menu-item">Link</a></li>
+	</ul>
+</header>
+
+<main class="container">
+
+<!-- Components -->
+	<h2 class="block-component block-edit" data-group="title" data-block="title-text" data-title="Title">Title</h2>
+
+	<h3 class="block-component block-edit" data-group="subtitle" data-block="subtitle-text" data-title="Subtitle">Subtitle</h3>
+
+	<p class="description block-component block-edit" data-group="text" data-title="Text" data-block="text-text">Article with longer text goes here, where the text would go on to at least several paragraphs and could include an image.</p>
+
+	<a href="#" class="btn-main block-component block-edit" data-group="button" data-block="button-text" data-title="Button">Button</a>
+
+<!-- Product section -->
+	<section class="block-section" data-group="product" data-title="Product">
+		<div class="row" style="gap: 20px; grid-row-gap: 0;">
+			<div class="col-6">
+				<img src="product-example.jpg" width="400" class="fill block-edit" data-block="product-image" style="height: auto;">
+			</div>
+			<div class="col-6">
+				<h2 class="block-edit" data-block="product-name">Product name</h2>
+				<p class="block-edit" data-block="product-text">Longer description of your digital product with details a buyer may want to know about. For example, for a book, a summary of the story.</p>
+				<p><a href="#" class="btn-main block-edit" data-block="product-btn">Buy product</a> <a href="#" class="block-edit block-remove" data-block="product-sample">View sample</a></p>
+				<p class="block-edit block-remove" data-block="product-sellers">Also available on: <a href="#">Seller</a> | <a href="#">Seller</a> | <a href="#">Seller</a></p>
+			</div>
+		</div>
+	</section>
+
+<!-- Quote post type section -->
+	<section class="box block-section" data-group="quote-post" data-title="Quote post type">
+		<blockquote style="margin-bottom: 0;">
+			<p class="block-remove block-edit" data-block="quote-post-quote">Quote text that you want to stand out.</p>
+			<cite class="block-edit" data-block="quote-post-cite">Author citation</cite>
+		</blockquote>
+	</section>
+
+<!-- Product listing section -->
+	<section class="product-listing box block-section" data-group="product-listing" data-title="Product listing">
+		<div class="row one-col" style="gap: 20px; row-gap: 0;">
+			<div class="col-3">
+				<img src="product-example.jpg" width="400" class="fill block-edit" data-block="product-listing-image" style="height: auto;">
+			</div>
+			<div class="col-9">
+				<h3 class="block-edit" data-block="product-listing-name">Product name</h3>
+				<p class="block-edit" data-block="product-listing-text">Listing item, like a featured link with a description.</p>
+				<p><a href="#" class="btn-main block-edit" data-block="product-listing-btn">View product</a></p>
+			</div>
+		</div>
+	</section>
+
+<!-- Product listing two-column section -->
+	<section class="product-listing block-section" data-group="product-listing-two" data-title="Product listing two-column">
+		<div class="row" style="gap: 20px; row-gap: 0;">
+			<div class="col-6 box">
+				<div class="row two-col" style="gap: 20px; row-gap: 0;">
+					<div class="col-6">
+						<img src="product-example.jpg" width="500" class="fill block-edit block-remove" data-block="product-listing-two-image-1">
+					</div>
+					<div class="col-6">
+						<h3 class="block-edit" data-block="product-listing-two-name-1">Product name</h3>
+						<p class="block-edit" data-block="product-listing-two-text-1">Listing item, like a featured link with a description.</p>
+						<p><a href="#" class="btn-main block-edit" data-block="product-listing-two-btn-1">View product</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 box">
+				<div class="row two-col" style="gap: 20px; row-gap: 0;">
+					<div class="col-6">
+						<img src="product-example.jpg" width="500" class="fill block-edit block-remove" data-block="product-listing-two-image-2">
+					</div>
+					<div class="col-6">
+						<h3 class="block-edit" data-block="product-listing-two-name-2">Product name</h3>
+						<p class="block-edit" data-block="product-listing-two-text-2">Listing item, like a featured link with a description.</p>
+						<p><a href="#" class="btn-main block-edit" data-block="product-listing-two-btn-2">View product</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<!-- Follow footer -->
+<footer>
+	<h3 class="block-edit" data-block="follow-updates-title">Follow</h3>
+	<p class="p-note block-edit block-remove" data-block="follow-updates-description">Get updates via email, or <a href="#">the RSS feed</a></p>
+
+	<form id="contact" method="post" action="https://indieaisle.com/email/in/">
+		<input type="hidden" id="enablesubmit" name="enablesubmit" value="">
+		<p>
+			<input id="field-email" size="30" maxlength="200" name="field-email" required placeholder="Email address" class="block-edit" data-block="follow-updates-email" type="email"> <button type="submit" class="btn-main">Subscribe</button>
+		</p>
+	</form>
+</footer>
+
+<!-- Indie Aisle - connect directly to your audience -->
+<script src="https://indieaisle.com/form/submit.js" defer></script>
+<script src="https://indieaisle.com/stats/get.js"></script>
+<!-- / Indie Aisle -->
+
+</body>
+</html>
