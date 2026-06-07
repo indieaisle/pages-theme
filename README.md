@@ -1,7 +1,7 @@
 # Pages indie web theme
 ### HTML templates of standard components for building your website
 
-<img src="pages-theme-updates.png" alt="Screenshot of pages template example" width="300">
+<img src="pages-theme-updates.jpg" alt="Screenshot of pages template example" width="300">
 
 Use the [Blocks Edit visual](https://blocksedit.com/) editor for free to add and edit content.
 
